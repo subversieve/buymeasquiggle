@@ -100,7 +100,7 @@ export default function StoryPage() {
           <TimelineItem
             time="hour 13"
             milestone="THE BUY"
-            body="The contract&rsquo;s holder address purchases a Squiggle on the open market. The transaction is public, on-chain, screenshottable."
+            body="The creator withdraws funds to a public wallet and purchases a Squiggle on OpenSea. The transaction is public, on-chain, and screenshottable. The proof goes up here."
             isLast
           />
         </div>
@@ -116,15 +116,15 @@ export default function StoryPage() {
         }}>
           <PromiseCard
             title="Immutable"
-            body="The contract has no admin keys. Once it&rsquo;s deployed, no one &mdash; not even me &mdash; can change the rules or withdraw early."
+            body="The contract has no admin keys, no pause function, no upgrade path. The deadline, destination wallet, and refund logic are set at deploy and can never change."
           />
           <PromiseCard
             title="Refundable"
-            body="If the goal isn&rsquo;t hit by the deadline, every patron can pull their full ETH back. The art stays in your wallet forever."
+            body="If the goal isn&rsquo;t hit and the creator doesn&rsquo;t withdraw in time, every patron can pull their full ETH back. The art stays in your wallet forever."
           />
           <PromiseCard
             title="Verifiable"
-            body="Source code published. Contract verified on Etherscan. The squiggle purchase will be a public, traceable transaction."
+            body="Source code published. Contract verified on Etherscan. The squiggle purchase will be a public, traceable transaction from a wallet linked here."
           />
         </div>
       </section>

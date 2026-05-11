@@ -335,7 +335,7 @@ export default function BuyMeASquiggle() {
           </span>
         </div>
         <div style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, color: "#888", letterSpacing: "0.18em", marginBottom: 22 }}>
-          PER POINT
+          PER SLICE
         </div>
 
         {/* Raised + patrons */}
@@ -368,7 +368,7 @@ export default function BuyMeASquiggle() {
         </div>
 
         <div style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 11, color: "#999", marginBottom: 18 }}>
-          {points} point{points !== 1 ? "s" : ""} = {cost != null ? fmt(parseFloat(cost), 6) : "———"} ETH
+          {points} slice{points !== 1 ? "s" : ""} = {cost != null ? fmt(parseFloat(cost), 6) : "———"} ETH
         </div>
 
         {/* Mint button */}

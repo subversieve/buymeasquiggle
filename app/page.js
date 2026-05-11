@@ -110,7 +110,7 @@ function TopNav({ walletAddress, onConnect }) {
         <a href="/lab" style={navLink}>Lab</a>
       </div>
       <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-        <a href="https://x.com/buymeasquiggle" target="_blank" rel="noopener noreferrer" style={iconLink} aria-label="X">
+        <a href="https://x.com/subversieve" target="_blank" rel="noopener noreferrer" style={iconLink} aria-label="X">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
           </svg>
@@ -438,7 +438,7 @@ export default function BuyMeASquiggle() {
       {/* FOOTER */}
       <footer style={{ marginTop: 80, padding: "40px 24px 60px", textAlign: "center", position: "relative", zIndex: 1, borderTop: "1px solid rgba(0,0,0,0.06)" }}>
         <div style={{ display: "flex", justifyContent: "center", gap: 28, marginBottom: 18, fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 15 }}>
-          <a href="https://x.com/buymeasquiggle" target="_blank" rel="noopener noreferrer" style={footerLink}>X</a>
+          <a href="https://x.com/subversieve" target="_blank" rel="noopener noreferrer" style={footerLink}>X</a>
           <span style={{ color: "#cfc8b8" }}>·</span>
           <a href={`https://opensea.io/assets/ethereum/${BMAS_ADDRESS}`} target="_blank" rel="noopener noreferrer" style={footerLink}>OpenSea</a>
           <span style={{ color: "#cfc8b8" }}>·</span>

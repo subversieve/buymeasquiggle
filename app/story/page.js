@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { BMAS_ADDRESS } from "../lib/contract";
 
 export default function StoryPage() {
   return (
@@ -95,7 +96,7 @@ export default function StoryPage() {
           <TimelineItem
             time="hour 12"
             milestone="GOAL REACHED"
-            body="2.8 ETH locked in the contract. Enough to acquire a Chromie Squiggle at floor. The contract flips to RESOLVED."
+            body="2.937 ETH raised. Minting closes automatically. The creator can now call withdraw — sending funds to a public destination wallet."
           />
           <TimelineItem
             time="hour 13"
@@ -116,11 +117,11 @@ export default function StoryPage() {
         }}>
           <PromiseCard
             title="Immutable"
-            body="The contract has no admin keys, no pause function, no upgrade path. The deadline, destination wallet, and refund logic are set at deploy and can never change."
+            body="No pause function, no upgrade path, no back doors. The deadline, destination wallet, goal, and refund logic are set at deploy and can never change."
           />
           <PromiseCard
             title="Refundable"
-            body="If the goal isn&rsquo;t hit and the creator doesn&rsquo;t withdraw in time, every patron can pull their full ETH back. The art stays in your wallet forever."
+            body="If the goal isn&rsquo;t reached by the deadline, every patron can call refund and pull their full ETH back. The art stays in your wallet forever."
           />
           <PromiseCard
             title="Verifiable"
@@ -195,11 +196,11 @@ export default function StoryPage() {
           fontFamily: "'Instrument Serif', Georgia, serif",
           fontSize: 15,
         }}>
-          <a href="https://x.com" target="_blank" rel="noopener noreferrer" style={footerLink}>X</a>
+          <a href="https://x.com/subversieve" target="_blank" rel="noopener noreferrer" style={footerLink}>X</a>
           <span style={{ color: "#cfc8b8" }}>·</span>
-          <a href="https://opensea.io" target="_blank" rel="noopener noreferrer" style={footerLink}>OpenSea</a>
+          <a href={`https://opensea.io/assets/ethereum/${BMAS_ADDRESS}`} target="_blank" rel="noopener noreferrer" style={footerLink}>OpenSea</a>
           <span style={{ color: "#cfc8b8" }}>·</span>
-          <a href="https://etherscan.io" target="_blank" rel="noopener noreferrer" style={footerLink}>Etherscan</a>
+          <a href={`https://etherscan.io/address/${BMAS_ADDRESS}`} target="_blank" rel="noopener noreferrer" style={footerLink}>Etherscan</a>
         </div>
         <p style={{
           fontFamily: "'IBM Plex Mono', monospace",
@@ -217,7 +218,7 @@ export default function StoryPage() {
           color: "#c9c2b3",
           marginTop: 8,
         }}>
-          0x0000...0000
+          {BMAS_ADDRESS.toLowerCase()}
         </p>
       </footer>
     </div>

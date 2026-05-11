@@ -630,10 +630,9 @@ export default function BuyMeASquiggle() {
       >
         <h2 style={sectionHeading}>What is Buy Me A Squiggle?</h2>
         <p style={storyParagraph}>
-          One person asked the internet to help them buy a Chromie Squiggle.
-          No promises, no roadmap, no team. Just a smart contract with two possible
-          outcomes: the squiggle gets bought, or everyone gets a full refund.
-          Either way, you keep the art.
+          One person asking the internet to help them buy a Chromie Squiggle.
+          No promises, no roadmap, no team &mdash; just a contract, a deadline,
+          and a commitment.
         </p>
         <p style={storyParagraph}>
           Chromie Squiggles are Erick &ldquo;Snowfro&rdquo; Calderon&rsquo;s seminal generative art collection
@@ -643,9 +642,11 @@ export default function BuyMeASquiggle() {
         </p>
         <p style={storyParagraph}>
           Every patron mints a unique on-chain point along a generative squiggle.
-          The price per point rises with each mint &mdash; a bonding curve baked into
-          the contract. Earlier patrons pay less. The contract is immutable.
-          No one can change the rules. The code is the law.
+          Each point costs slightly more than the last &mdash; a bonding curve baked
+          into the contract. Earlier patrons pay less. If the goal is reached,
+          the creator buys a Chromie Squiggle and posts the proof. If not, refunds
+          open automatically. The contract is immutable. No one can change the rules.
+          The code is law &mdash; and trust is earned with every transaction.
         </p>
       </section>
 
@@ -671,11 +672,11 @@ export default function BuyMeASquiggle() {
           />
           <HowItem
             label="Fund"
-            body="All ETH is locked in a smart contract. No one can withdraw it. The only way out: buy a Chromie Squiggle, or let the deadline pass."
+            body="ETH is held in the contract until the goal is met. If the goal is reached, the creator withdraws to a public wallet and commits to buying a Chromie Squiggle. Every step is visible on-chain."
           />
           <HowItem
             label="Resolve"
-            body="If the goal is reached, a Squiggle is bought. If not, every patron gets a full refund. The art stays theirs either way."
+            body="If a Squiggle is bought, the on-chain transaction proves it. If the goal isn't met by the deadline, every patron can pull a full refund. The art stays in your wallet either way."
           />
         </div>
       </section>

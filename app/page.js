@@ -6,6 +6,7 @@ import {
   BMAS_ADDRESS, CHAIN_ID, GOAL_ETH, MAX_POINTS_PER_MINT,
   getReadContract, getWriteContract,
 } from "./lib/contract";
+import { BMASSquiggle, YS_ORGANIC } from "./lib/squiggle";
 
 // buymeasquiggle.xyz
 
@@ -326,8 +327,8 @@ export default function BuyMeASquiggle() {
           <span style={{ fontStyle: "italic" }}>or get a refund</span>
         </h1>
 
-        <div style={{ background: "#fff", borderRadius: 18, padding: "22px 16px", margin: "0 auto 28px", width: 180, height: 130, display: "flex", alignItems: "center", boxShadow: "0 1px 0 rgba(0,0,0,0.04), 0 10px 30px -10px rgba(0,0,0,0.08)" }}>
-          <Squiggle phase={phase} />
+        <div style={{ borderRadius: 14, margin: "0 auto 28px", width: 280, overflow: "hidden", boxShadow: "0 1px 0 rgba(0,0,0,0.08), 0 10px 40px -10px rgba(0,0,0,0.18)" }}>
+          <BMASSquiggle points={15} ys={YS_ORGANIC} startHue={0} bgGray={20} phaseShift={phase} width="100%" height="auto" />
         </div>
 
         {/* Live + countdown */}

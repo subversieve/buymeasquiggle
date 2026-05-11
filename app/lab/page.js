@@ -141,7 +141,7 @@ export default function LabPage() {
       <section style={{ maxWidth: 520, margin: "70px auto 0", padding: "0 24px", textAlign: "center", position: "relative", zIndex: 1 }}>
         <p style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic", fontSize: 19, lineHeight: 1.55, color: "#3a3a3a", margin: "0 0 22px" }}>
           The Lab opens once the squiggle has been acquired.<br/>
-          Until then, every patron just holds a point.
+          Until then, every patron just holds their slices.
         </p>
         <a href="/" style={{ display: "inline-block", background: "transparent", color: "#1a1a1a", textDecoration: "none", border: "1px solid #1a1a1a", borderRadius: 999, padding: "12px 26px", fontFamily: "'IBM Plex Mono', monospace", fontSize: 11, letterSpacing: "0.25em", fontWeight: 600 }}>
           MINT A POINT

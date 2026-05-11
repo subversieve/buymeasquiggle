@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 
-export const BMAS_ADDRESS = "0x42687A744104FF0ee93bA721a536E27309344535";
+export const BMAS_ADDRESS = "0x8c056Ad3f7F7F1a601E6b2972c6Eb7E211b863BD";
 export const CHAIN_ID = 1; // Ethereum mainnet
 export const GOAL_ETH = 2.937;
 export const TARGET_POINTS = 720;

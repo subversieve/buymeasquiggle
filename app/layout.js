@@ -1,5 +1,9 @@
 export const metadata = {
   title: "buy me a squiggle",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
   description: "An on-chain crowdfund to acquire a Chromie Squiggle. Full refund if it fails — you keep the art.",
   openGraph: {
     title: "buy me a squiggle",

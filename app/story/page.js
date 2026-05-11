@@ -208,7 +208,7 @@ export default function StoryPage() {
           color: "#b0aa9c",
           margin: 0,
         }}>
-          IMMUTABLE · NO ADMIN KEYS · VERIFIED ON ETHERSCAN
+          IMMUTABLE · CODE IS LAW · VERIFIED ON ETHERSCAN
         </p>
         <p style={{
           fontFamily: "'IBM Plex Mono', monospace",

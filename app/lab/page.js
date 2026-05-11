@@ -158,7 +158,7 @@ export default function LabPage() {
           <a href={`https://etherscan.io/address/${BMAS_ADDRESS}`} target="_blank" rel="noopener noreferrer" style={footerLink}>Etherscan</a>
         </div>
         <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, letterSpacing: "0.2em", color: "#b0aa9c", margin: 0 }}>
-          IMMUTABLE · NO ADMIN KEYS · VERIFIED ON ETHERSCAN
+          IMMUTABLE · CODE IS LAW · VERIFIED ON ETHERSCAN
         </p>
         <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, letterSpacing: "0.15em", color: "#c9c2b3", marginTop: 8 }}>
           {BMAS_ADDRESS.toLowerCase()}

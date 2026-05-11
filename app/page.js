@@ -418,7 +418,7 @@ export default function BuyMeASquiggle() {
       <section style={{ maxWidth: 720, margin: "60px auto 0", padding: "0 24px", position: "relative", zIndex: 1 }}>
         <h2 style={{ ...sectionHeading, marginBottom: 28 }}>How It Works</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
-          <HowItem label="Mint" body="Patrons send ETH and receive a unique on-chain point along a generative squiggle. Each point is computed from an immutable seed; no two alike." />
+          <HowItem label="Mint" body="Patrons send ETH and receive a unique on-chain BMAS NFT. Each token has an immutable seed that determines its outcome — more slices reveals more of it." />
           <HowItem label="Fund" body="ETH is held in the contract until the goal is met. If the goal is reached, the creator withdraws to a public wallet and commits to buying a Chromie Squiggle. Every step is visible on-chain." />
           <HowItem label="Resolve" body="If a Squiggle is bought, the on-chain transaction proves it. If the goal isn't met by the deadline, every patron can pull a full refund. The art stays in your wallet either way." />
         </div>

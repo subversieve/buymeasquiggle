@@ -371,6 +371,19 @@ export default function BuyMeASquiggle() {
         position: "relative",
         zIndex: 1,
       }}>
+        {/* Eyebrow */}
+        <p style={{
+          textAlign: "center",
+          fontFamily: "'JetBrains Mono', monospace",
+          fontSize: 10,
+          letterSpacing: "0.3em",
+          color: "#9a9385",
+          margin: "0 0 22px",
+          textTransform: "uppercase",
+        }}>
+          An on-chain experiment
+        </p>
+
         {/* Headline */}
         <h1
           style={{
@@ -379,7 +392,7 @@ export default function BuyMeASquiggle() {
             fontSize: "44px",
             lineHeight: 1.05,
             textAlign: "center",
-            margin: "12px 0 36px",
+            margin: "0 0 36px",
             letterSpacing: "-0.01em",
           }}
         >
@@ -603,23 +616,172 @@ export default function BuyMeASquiggle() {
           you keep the art
         </p>
 
-        {/* tiny attribution / domain */}
-        <p
-          style={{
-            textAlign: "center",
-            marginTop: 32,
-            fontFamily: "'JetBrains Mono', monospace",
-            fontSize: 10,
-            color: "#b0aa9c",
-            letterSpacing: "0.2em",
-          }}
-        >
-          BUYMEASQUIGGLE.XYZ
-        </p>
       </div>
+
+      {/* ============ STORY SECTION ============ */}
+      <section
+        style={{
+          maxWidth: 520,
+          margin: "60px auto 0",
+          padding: "0 24px",
+          position: "relative",
+          zIndex: 1,
+        }}
+      >
+        <h2 style={sectionHeading}>What is Buy Me A Squiggle?</h2>
+        <p style={storyParagraph}>
+          One person asked the internet to help them buy a Chromie Squiggle.
+          No promises, no roadmap, no team. Just a smart contract with two possible
+          outcomes: the squiggle gets bought, or everyone gets a full refund.
+          Either way, you keep the art.
+        </p>
+        <p style={storyParagraph}>
+          Chromie Squiggles are Erick &ldquo;Snowfro&rdquo; Calderon&rsquo;s seminal generative art collection
+          on Art Blocks &mdash; the project that, in many ways, launched on-chain generative
+          art as a movement. Owning one has always felt out of reach for most. This is one
+          attempt to change that, for one person, with help from strangers.
+        </p>
+        <p style={storyParagraph}>
+          Every patron mints a unique on-chain point along a generative squiggle.
+          The price per point rises with each mint &mdash; a bonding curve baked into
+          the contract. Earlier patrons pay less. The contract is immutable.
+          No one can change the rules. The code is the law.
+        </p>
+      </section>
+
+      {/* ============ HOW IT WORKED ============ */}
+      <section
+        style={{
+          maxWidth: 720,
+          margin: "60px auto 0",
+          padding: "0 24px",
+          position: "relative",
+          zIndex: 1,
+        }}
+      >
+        <h2 style={{ ...sectionHeading, marginBottom: 28 }}>How It Works</h2>
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+          gap: 16,
+        }}>
+          <HowItem
+            label="Mint"
+            body="Patrons send ETH and receive a unique on-chain point along a generative squiggle. Each point is computed from an immutable seed; no two alike."
+          />
+          <HowItem
+            label="Fund"
+            body="All ETH is locked in a smart contract. No one can withdraw it. The only way out: buy a Chromie Squiggle, or let the deadline pass."
+          />
+          <HowItem
+            label="Resolve"
+            body="If the goal is reached, a Squiggle is bought. If not, every patron gets a full refund. The art stays theirs either way."
+          />
+        </div>
+      </section>
+
+      {/* ============ FOOTER ============ */}
+      <footer
+        style={{
+          marginTop: 80,
+          padding: "40px 24px 60px",
+          textAlign: "center",
+          position: "relative",
+          zIndex: 1,
+          borderTop: "1px solid rgba(0,0,0,0.06)",
+        }}
+      >
+        <div style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: 28,
+          marginBottom: 18,
+          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontSize: 15,
+        }}>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" style={footerLink}>X</a>
+          <span style={{ color: "#cfc8b8" }}>·</span>
+          <a href="https://opensea.io" target="_blank" rel="noopener noreferrer" style={footerLink}>OpenSea</a>
+          <span style={{ color: "#cfc8b8" }}>·</span>
+          <a href="https://etherscan.io" target="_blank" rel="noopener noreferrer" style={footerLink}>Etherscan</a>
+        </div>
+        <p style={{
+          fontFamily: "'JetBrains Mono', monospace",
+          fontSize: 10,
+          letterSpacing: "0.2em",
+          color: "#b0aa9c",
+          margin: 0,
+        }}>
+          IMMUTABLE · NO ADMIN KEYS · VERIFIED ON ETHERSCAN
+        </p>
+        <p style={{
+          fontFamily: "'JetBrains Mono', monospace",
+          fontSize: 10,
+          letterSpacing: "0.15em",
+          color: "#c9c2b3",
+          marginTop: 8,
+        }}>
+          0x0000...0000
+        </p>
+      </footer>
     </div>
   );
 }
+
+function HowItem({ label, body }) {
+  return (
+    <div style={{
+      background: "rgba(255,255,255,0.5)",
+      border: "1px solid rgba(0,0,0,0.05)",
+      borderRadius: 10,
+      padding: "18px 20px",
+    }}>
+      <div style={{
+        fontFamily: "'JetBrains Mono', monospace",
+        fontSize: 11,
+        letterSpacing: "0.25em",
+        color: "#1a1a1a",
+        fontWeight: 600,
+        marginBottom: 10,
+      }}>
+        {label.toUpperCase()}
+      </div>
+      <p style={{
+        fontFamily: "'Cormorant Garamond', Georgia, serif",
+        fontSize: 15,
+        lineHeight: 1.5,
+        color: "#3a3a3a",
+        margin: 0,
+      }}>
+        {body}
+      </p>
+    </div>
+  );
+}
+
+const sectionHeading = {
+  fontFamily: "'Cormorant Garamond', Georgia, serif",
+  fontWeight: 500,
+  fontSize: 30,
+  textAlign: "center",
+  margin: "0 0 22px",
+  letterSpacing: "-0.005em",
+};
+
+const storyParagraph = {
+  fontFamily: "'Cormorant Garamond', Georgia, serif",
+  fontSize: 17,
+  lineHeight: 1.55,
+  color: "#2a2a2a",
+  margin: "0 0 18px",
+  textAlign: "left",
+};
+
+const footerLink = {
+  color: "#1a1a1a",
+  textDecoration: "none",
+  letterSpacing: "0.02em",
+};
 
 const subSx = {
   fontSize: 9,

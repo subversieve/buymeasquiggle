@@ -103,8 +103,8 @@ function TopNav({ walletAddress, onConnect }) {
     ? walletAddress.slice(0, 6) + "…" + walletAddress.slice(-4)
     : null;
   return (
-    <nav style={{ position: "relative", zIndex: 5, display: "flex", alignItems: "center", justifyContent: "space-between", padding: "20px 40px", fontFamily: "'IBM Plex Mono', monospace", fontSize: 12, letterSpacing: "0.12em" }}>
-      <a href="/" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: 600, letterSpacing: "0.3em", fontSize: 13 }}>BMAS</a>
+    <nav style={{ position: "relative", zIndex: 5, display: "flex", alignItems: "center", justifyContent: "space-between", padding: "20px 40px", fontFamily: "'IBM Plex Mono', monospace", fontSize: 13, letterSpacing: "0.12em" }}>
+      <a href="/" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: 600, letterSpacing: "0.3em", fontSize: 14 }}>BMAS</a>
       <div style={{ display: "flex", gap: 28, alignItems: "center" }}>
         <a href="/" style={navLink}>Home</a>
         <a href="/story" style={navLink}>Story</a>
@@ -112,17 +112,17 @@ function TopNav({ walletAddress, onConnect }) {
       </div>
       <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
         <a href="https://x.com/subversieve" target="_blank" rel="noopener noreferrer" style={iconLink} aria-label="X">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
           </svg>
         </a>
         <a href={`https://opensea.io/assets/ethereum/${BMAS_ADDRESS}`} target="_blank" rel="noopener noreferrer" style={iconLink} aria-label="OpenSea">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
             <circle cx="12" cy="12" r="11" fill="#2081E2" />
             <path d="M5 13.5c0-.5.4-.9.9-.9h2.6V11l1.6-2.3a.2.2 0 01.4.1V13h3.7s-.7 2.3-3.5 2.3H6.4c-.6 0-1.1-.4-1.1-1V13.5z" fill="#fff" />
           </svg>
         </a>
-        <button onClick={onConnect} style={{ border: "1px solid #1a1a1a", background: "transparent", borderRadius: 999, padding: "8px 18px", fontFamily: "'IBM Plex Mono', monospace", fontSize: 11, letterSpacing: "0.2em", fontWeight: 500, cursor: "pointer", color: "#1a1a1a" }}>
+        <button onClick={onConnect} style={{ border: "1px solid #1a1a1a", background: "transparent", borderRadius: 999, padding: "10px 22px", fontFamily: "'IBM Plex Mono', monospace", fontSize: 13, letterSpacing: "0.2em", fontWeight: 500, cursor: "pointer", color: "#1a1a1a" }}>
           {shortAddr || "CONNECT"}
         </button>
       </div>
@@ -130,8 +130,7 @@ function TopNav({ walletAddress, onConnect }) {
   );
 }
 
-const navLink = { color: "#1a1a1a", textDecoration: "none", fontSize: 13, letterSpacing: "0.04em", fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500 };
-const iconLink = { color: "#1a1a1a", display: "inline-flex", alignItems: "center", justifyContent: "center", width: 28, height: 28, borderRadius: 999, textDecoration: "none" };
+const iconLink = { color: "#1a1a1a", display: "inline-flex", alignItems: "center", justifyContent: "center", width: 32, height: 32, borderRadius: 999, textDecoration: "none" };
 
 const PLACEHOLDER_ITEMS = [
   "mint a slice", "be the first patron", "your name here",
@@ -304,11 +303,11 @@ export default function BuyMeASquiggle() {
 
       <div style={{ width: "100%", maxWidth: 520, margin: "0 auto", padding: "40px 20px 80px", position: "relative", zIndex: 1 }}>
 
-        <p style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, letterSpacing: "0.3em", color: "#9a9385", margin: "0 0 22px", textTransform: "uppercase" }}>
+        <p style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 12, letterSpacing: "0.3em", color: "#9a9385", margin: "0 0 22px", textTransform: "uppercase" }}>
           An on-chain experiment
         </p>
 
-        <h1 style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500, fontSize: "44px", lineHeight: 1.05, textAlign: "center", margin: "0 0 36px", letterSpacing: "-0.01em" }}>
+        <h1 style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500, fontSize: "50px", lineHeight: 1.05, textAlign: "center", margin: "0 0 36px", letterSpacing: "-0.01em" }}>
           buy me a squiggle<br/>
           <span style={{ fontStyle: "italic" }}>or get a refund</span>
         </h1>
@@ -320,7 +319,7 @@ export default function BuyMeASquiggle() {
         {/* Live + countdown */}
         <div style={{ textAlign: "center", marginBottom: 18 }}>
           <span style={{ background: "#1a1a1a", color: "#fff", fontFamily: "'IBM Plex Mono', monospace", fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 999, letterSpacing: "0.05em", marginRight: 10 }}>● LIVE</span>
-          <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 14, color: "#1a1a1a", letterSpacing: "0.04em" }}>
+          <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 16, color: "#1a1a1a", letterSpacing: "0.04em" }}>
             {String(d).padStart(2, "0")}<sub style={subSx}>d</sub>{" "}
             {String(h).padStart(2, "0")}<sub style={subSx}>h</sub>{" "}
             {String(m).padStart(2, "0")}<sub style={subSx}>m</sub>{" "}
@@ -330,16 +329,16 @@ export default function BuyMeASquiggle() {
 
         {/* Price */}
         <div style={{ textAlign: "center", marginBottom: 6 }}>
-          <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 38, fontWeight: 500, letterSpacing: "-0.01em" }}>
+          <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 42, fontWeight: 500, letterSpacing: "-0.01em" }}>
             {contractData ? fmt(contractData.pointPriceEth, 6) : "———"} ETH
           </span>
         </div>
-        <div style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, color: "#888", letterSpacing: "0.18em", marginBottom: 22 }}>
+        <div style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 12, color: "#888", letterSpacing: "0.18em", marginBottom: 22 }}>
           PER SLICE
         </div>
 
         {/* Raised + patrons */}
-        <div style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 13, marginBottom: 14 }}>
+        <div style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 15, marginBottom: 14 }}>
           <strong style={{ fontWeight: 600 }}>{fmt(raisedEth, 4)}</strong>
           <span style={{ color: "#888" }}> ETH raised</span>
           <span style={{ color: "#bbb", margin: "0 10px" }}>·</span>
@@ -351,7 +350,7 @@ export default function BuyMeASquiggle() {
         <div style={{ height: 3, background: "#d8d3c7", borderRadius: 999, overflow: "hidden", marginBottom: 8 }}>
           <div style={{ width: `${progressPct}%`, height: "100%", background: "#1a1a1a", transition: "width 600ms ease" }} />
         </div>
-        <div style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 11, color: "#999", marginBottom: 22, letterSpacing: "0.05em" }}>
+        <div style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 13, color: "#999", marginBottom: 22, letterSpacing: "0.05em" }}>
           {fmt(raisedEth, 4)} / {GOAL_ETH.toFixed(3)} ETH
         </div>
 
@@ -360,14 +359,14 @@ export default function BuyMeASquiggle() {
           <button onClick={() => setPoints((p) => Math.max(1, p - 1))} style={stepBtn} aria-label="decrease">−</button>
           <input
             type="text"
-            value={cost != null ? fmt(parseFloat(cost), 6) : "———"}
+            value={points}
             readOnly
-            style={{ flex: 1, border: "none", outline: "none", textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 20, color: "#1a1a1a", background: "transparent", padding: "14px 0" }}
+            style={{ flex: 1, border: "none", outline: "none", textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 36, color: "#1a1a1a", background: "transparent", padding: "14px 0" }}
           />
           <button onClick={() => setPoints((p) => Math.min(MAX_POINTS_PER_MINT, p + 1))} style={stepBtn} aria-label="increase">+</button>
         </div>
 
-        <div style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 11, color: "#999", marginBottom: 18 }}>
+        <div style={{ textAlign: "center", fontFamily: "'IBM Plex Mono', monospace", fontSize: 13, color: "#999", marginBottom: 18 }}>
           {points} slice{points !== 1 ? "s" : ""} = {cost != null ? fmt(parseFloat(cost), 6) : "———"} ETH
         </div>
 
@@ -398,7 +397,7 @@ export default function BuyMeASquiggle() {
           </p>
         )}
 
-        <p style={{ textAlign: "center", marginTop: 28, fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 17, fontStyle: "italic", color: "#5a5a5a", lineHeight: 1.5 }}>
+        <p style={{ textAlign: "center", marginTop: 28, fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 20, fontStyle: "italic", color: "#5a5a5a", lineHeight: 1.5 }}>
           full refund if it fails<br/>
           you keep the art
         </p>
@@ -445,14 +444,15 @@ export default function BuyMeASquiggle() {
 function HowItem({ label, body }) {
   return (
     <div style={{ background: "rgba(255,255,255,0.5)", border: "1px solid rgba(0,0,0,0.05)", borderRadius: 10, padding: "18px 20px" }}>
-      <div style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 11, letterSpacing: "0.25em", color: "#1a1a1a", fontWeight: 600, marginBottom: 10 }}>{label.toUpperCase()}</div>
-      <p style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 15, lineHeight: 1.5, color: "#3a3a3a", margin: 0 }}>{body}</p>
+      <div style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 12, letterSpacing: "0.25em", color: "#1a1a1a", fontWeight: 600, marginBottom: 10 }}>{label.toUpperCase()}</div>
+      <p style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 17, lineHeight: 1.5, color: "#3a3a3a", margin: 0 }}>{body}</p>
     </div>
   );
 }
 
-const sectionHeading = { fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500, fontSize: 30, textAlign: "center", margin: "0 0 22px", letterSpacing: "-0.005em" };
-const storyParagraph = { fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 17, lineHeight: 1.55, color: "#2a2a2a", margin: "0 0 18px", textAlign: "left" };
+const sectionHeading = { fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500, fontSize: 34, textAlign: "center", margin: "0 0 22px", letterSpacing: "-0.005em" };
+const storyParagraph = { fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 19, lineHeight: 1.55, color: "#2a2a2a", margin: "0 0 18px", textAlign: "left" };
 const footerLink = { color: "#1a1a1a", textDecoration: "none", letterSpacing: "0.02em" };
-const subSx = { fontSize: 9, color: "#999", marginLeft: 1, fontWeight: 400 };
-const stepBtn = { width: 44, height: 44, border: "none", background: "transparent", fontSize: 22, color: "#666", cursor: "pointer", fontFamily: "'IBM Plex Mono', monospace", borderRadius: 8 };
+const subSx = { fontSize: 10, color: "#999", marginLeft: 1, fontWeight: 400 };
+const stepBtn = { width: 52, height: 52, border: "none", background: "transparent", fontSize: 26, color: "#666", cursor: "pointer", fontFamily: "'IBM Plex Mono', monospace", borderRadius: 8 };
+const navLink = { color: "#1a1a1a", textDecoration: "none", fontSize: 15, letterSpacing: "0.04em", fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500 };

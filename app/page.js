@@ -355,6 +355,9 @@ export default function BuyMeASquiggle() {
         </div>
 
         {/* Input + steppers */}
+        <div style={{ textAlign: "center", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic", fontSize: 16, color: "#9a9385", marginBottom: 10 }}>
+          How many slices do you want?
+        </div>
         <div style={{ display: "flex", alignItems: "center", background: "#fff", borderRadius: 10, padding: "4px", boxShadow: "0 1px 0 rgba(0,0,0,0.04)", marginBottom: 10 }}>
           <button onClick={() => setPoints((p) => Math.max(1, p - 1))} style={stepBtn} aria-label="decrease">−</button>
           <input

@@ -103,8 +103,8 @@ function TopNav({ walletAddress, onConnect }) {
     ? walletAddress.slice(0, 6) + "…" + walletAddress.slice(-4)
     : null;
   return (
-    <nav style={{ position: "relative", zIndex: 5, display: "flex", alignItems: "center", justifyContent: "space-between", padding: "20px 40px", fontFamily: "'IBM Plex Mono', monospace", fontSize: 13, letterSpacing: "0.12em" }}>
-      <a href="/" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: 600, letterSpacing: "0.3em", fontSize: 14 }}>BMAS</a>
+    <nav style={{ position: "relative", zIndex: 5, display: "flex", alignItems: "center", justifyContent: "space-between", padding: "22px 40px", fontFamily: "'IBM Plex Mono', monospace", fontSize: 15, letterSpacing: "0.12em" }}>
+      <a href="/" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: 600, letterSpacing: "0.3em", fontSize: 16 }}>BMAS</a>
       <div style={{ display: "flex", gap: 28, alignItems: "center" }}>
         <a href="/" style={navLink}>Home</a>
         <a href="/story" style={navLink}>Story</a>
@@ -112,12 +112,12 @@ function TopNav({ walletAddress, onConnect }) {
       </div>
       <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
         <a href="https://x.com/subversieve" target="_blank" rel="noopener noreferrer" style={iconLink} aria-label="X">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
           </svg>
         </a>
         <a href={`https://opensea.io/assets/ethereum/${BMAS_ADDRESS}`} target="_blank" rel="noopener noreferrer" style={iconLink} aria-label="OpenSea">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
             <circle cx="12" cy="12" r="11" fill="#2081E2" />
             <path d="M5 13.5c0-.5.4-.9.9-.9h2.6V11l1.6-2.3a.2.2 0 01.4.1V13h3.7s-.7 2.3-3.5 2.3H6.4c-.6 0-1.1-.4-1.1-1V13.5z" fill="#fff" />
           </svg>
@@ -130,7 +130,7 @@ function TopNav({ walletAddress, onConnect }) {
   );
 }
 
-const iconLink = { color: "#1a1a1a", display: "inline-flex", alignItems: "center", justifyContent: "center", width: 32, height: 32, borderRadius: 999, textDecoration: "none" };
+const iconLink = { color: "#1a1a1a", display: "inline-flex", alignItems: "center", justifyContent: "center", width: 40, height: 40, borderRadius: 999, textDecoration: "none" };
 
 const PLACEHOLDER_ITEMS = [
   "mint a slice", "be the first patron", "your name here",
@@ -458,4 +458,4 @@ const storyParagraph = { fontFamily: "'Instrument Serif', Georgia, serif", fontS
 const footerLink = { color: "#1a1a1a", textDecoration: "none", letterSpacing: "0.02em" };
 const subSx = { fontSize: 10, color: "#999", marginLeft: 1, fontWeight: 400 };
 const stepBtn = { width: 52, height: 52, border: "none", background: "transparent", fontSize: 26, color: "#666", cursor: "pointer", fontFamily: "'IBM Plex Mono', monospace", borderRadius: 8 };
-const navLink = { color: "#1a1a1a", textDecoration: "none", fontSize: 15, letterSpacing: "0.04em", fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500 };
+const navLink = { color: "#1a1a1a", textDecoration: "none", fontSize: 17, letterSpacing: "0.04em", fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500 };

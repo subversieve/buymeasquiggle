@@ -430,6 +430,8 @@ export default function BuyMeASquiggle() {
           <a href={`https://opensea.io/assets/ethereum/${BMAS_ADDRESS}`} target="_blank" rel="noopener noreferrer" style={footerLink}>OpenSea</a>
           <span style={{ color: "#cfc8b8" }}>·</span>
           <a href={`https://etherscan.io/address/${BMAS_ADDRESS}`} target="_blank" rel="noopener noreferrer" style={footerLink}>Etherscan</a>
+          <span style={{ color: "#cfc8b8" }}>·</span>
+          <span style={{ fontStyle: "italic" }}>trust is essential</span>
         </div>
         <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, letterSpacing: "0.2em", color: "#b0aa9c", margin: 0 }}>
           IMMUTABLE · CODE IS LAW · VERIFIED ON ETHERSCAN
@@ -437,10 +439,6 @@ export default function BuyMeASquiggle() {
         <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, letterSpacing: "0.15em", color: "#c9c2b3", marginTop: 8 }}>
           {BMAS_ADDRESS.toLowerCase()}
         </p>
-        <div style={{ display: "flex", justifyContent: "center", gap: 48, marginTop: 28, fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 13, fontStyle: "italic", color: "#b0aa9c" }}>
-          <span>code is law</span>
-          <span>trust is essential</span>
-        </div>
       </footer>
     </div>
   );

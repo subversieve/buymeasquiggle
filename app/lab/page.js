@@ -128,7 +128,7 @@ export default function LabPage() {
 
       {/* Full squiggle preview */}
       <section style={{ maxWidth: 480, margin: "70px auto 0", padding: "0 24px", textAlign: "center", position: "relative", zIndex: 1 }}>
-        <p style={sectionLabel}>15 PT FULL SQUIGGLE</p>
+        <p style={sectionLabel}>15 PT FULL BMAS</p>
         <div style={{ borderRadius: 14, overflow: "hidden", boxShadow: "0 4px 32px -8px rgba(0,0,0,0.2)" }}>
           <BMASSquiggle points={15} ys={YS_ORGANIC} startHue={20} bgGray={30} phaseShift={phase} width="100%" height="auto" />
         </div>

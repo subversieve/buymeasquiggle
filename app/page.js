@@ -437,6 +437,10 @@ export default function BuyMeASquiggle() {
         <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, letterSpacing: "0.15em", color: "#c9c2b3", marginTop: 8 }}>
           {BMAS_ADDRESS.toLowerCase()}
         </p>
+        <div style={{ display: "flex", justifyContent: "center", gap: 48, marginTop: 28, fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 13, fontStyle: "italic", color: "#b0aa9c" }}>
+          <span>code is law</span>
+          <span>trust is essential</span>
+        </div>
       </footer>
     </div>
   );

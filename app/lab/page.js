@@ -71,7 +71,7 @@ export default function LabPage() {
         <p style={eyebrow}>Coming soon</p>
         <h1 style={pageTitle}>Merge Lab</h1>
         <p style={subhead}>
-          Burn two squiggles, keep one.<br/>
+          Burn two pieces, keep one.<br/>
           Your survivor gains more slices. The supply goes down.
         </p>
       </section>
@@ -115,13 +115,13 @@ export default function LabPage() {
         <h3 style={sectionLabel}>HOW MERGING WORKS</h3>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14 }}>
           <Card title="Burn"
-            body="You pick one of your tokens to burn. It's gone from the chain permanently — its points transfer to your survivor."
+            body="You pick one of your tokens to burn. It's gone from the chain permanently — its slices transfer to your survivor."
           />
           <Card title="Grow"
-            body="Your surviving token gains the burned token's points. More points means more slices — a richer, fuller squiggle."
+            body="Your surviving token gains the burned token's slices. More slices means a richer, fuller token."
           />
           <Card title="Deflate"
-            body="Total NFT supply drops by one. Every merge makes remaining squiggles rarer. The art is yours either way."
+            body="Total NFT supply drops by one. Every merge makes remaining BMAS rarer. The art is yours either way."
           />
         </div>
       </section>

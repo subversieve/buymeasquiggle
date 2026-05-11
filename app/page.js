@@ -109,7 +109,6 @@ function TopNav({ walletAddress, onConnect }) {
         <a href="/" style={navLink}>Home</a>
         <a href="/story" style={navLink}>Story</a>
         <a href="/lab" style={navLink}>Lab</a>
-        <span style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic", fontSize: 13, color: "#9a9385", letterSpacing: "0.02em" }}>trust is essential</span>
       </div>
       <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
         <a href="https://x.com/subversieve" target="_blank" rel="noopener noreferrer" style={iconLink} aria-label="X">
@@ -433,7 +432,7 @@ export default function BuyMeASquiggle() {
           <a href={`https://etherscan.io/address/${BMAS_ADDRESS}`} target="_blank" rel="noopener noreferrer" style={footerLink}>Etherscan</a>
         </div>
         <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, letterSpacing: "0.2em", color: "#b0aa9c", margin: 0 }}>
-          IMMUTABLE · CODE IS LAW · VERIFIED ON ETHERSCAN
+          IMMUTABLE · CODE IS LAW · TRUST IS ESSENTIAL · VERIFIED ON ETHERSCAN
         </p>
         <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, letterSpacing: "0.15em", color: "#c9c2b3", marginTop: 8 }}>
           {BMAS_ADDRESS.toLowerCase()}

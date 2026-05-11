@@ -144,7 +144,7 @@ export default function LabPage() {
           Until then, every patron just holds their slices.
         </p>
         <a href="/" style={{ display: "inline-block", background: "transparent", color: "#1a1a1a", textDecoration: "none", border: "1px solid #1a1a1a", borderRadius: 999, padding: "12px 26px", fontFamily: "'IBM Plex Mono', monospace", fontSize: 11, letterSpacing: "0.25em", fontWeight: 600 }}>
-          MINT A POINT
+          MINT A SLICE
         </a>
       </section>
 

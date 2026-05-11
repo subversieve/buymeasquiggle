@@ -145,12 +145,12 @@ function TopNav() {
         letterSpacing: "0.12em",
       }}
     >
-      <div style={{ fontWeight: 600, letterSpacing: "0.3em", fontSize: 13 }}>
+      <a href="/" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: 600, letterSpacing: "0.3em", fontSize: 13 }}>
         BMAS
-      </div>
+      </a>
       <div style={{ display: "flex", gap: 28, alignItems: "center" }}>
-        <a href="#" style={navLink}>Home</a>
-        <a href="#" style={{ ...navLink, color: "#999" }}>Story</a>
+        <a href="/" style={navLink}>Home</a>
+        <a href="/story" style={navLink}>Story</a>
         <a href="#" style={{ ...navLink, color: "#999" }}>Lab</a>
       </div>
       <div style={{ display: "flex", gap: 12, alignItems: "center" }}>

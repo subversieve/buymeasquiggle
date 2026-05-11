@@ -133,34 +133,20 @@ function TopNav({ walletAddress, onConnect }) {
 const navLink = { color: "#1a1a1a", textDecoration: "none", fontSize: 13, letterSpacing: "0.04em", fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500 };
 const iconLink = { color: "#1a1a1a", display: "inline-flex", alignItems: "center", justifyContent: "center", width: 28, height: 28, borderRadius: 999, textDecoration: "none" };
 
-const PATRON_HANDLES = [
-  "@wg","@jay_chans","@rostisi","@maomao782f","@Luaanalo","@SkyAAmen",
-  "@jaychans8cc","@mdouysy","@mak1111222","@kersa1n","@ThangP97","@KozalakB",
-  "@TheMissSey","@Chamom1le","@0xhuowa","@fnd_alpx","@nsSHABii","@MUSODES",
-  "@haxx_sol","@a9touyan5211314","@BundlesofFun_","@KGKG1019","@Jagadee2504K",
-  "@florent","@snowfro","@chromie","@artblocks","@0xether","@punks6529",
+const PLACEHOLDER_ITEMS = [
+  "mint a point", "be the first patron", "your name here",
+  "mint a point", "join the crowdfund", "your name here",
+  "mint a point", "be the first patron", "your name here",
+  "mint a point", "join the crowdfund", "your name here",
 ];
 
-function PatronMarquee({ direction = "left", patronCount }) {
+function PatronMarquee({ direction = "left" }) {
   const trackClass = direction === "left" ? "marquee-track-left" : "marquee-track-right";
-  const label = patronCount != null ? `${patronCount} patrons minted points to fund a Chromie Squiggle` : "minting points to fund a Chromie Squiggle";
   const content = (
     <div className={`marquee-row ${trackClass}`}>
-      {[...PATRON_HANDLES, ...PATRON_HANDLES].map((h, i) => {
-        if (i === 4 || i === PATRON_HANDLES.length + 4) {
-          return (
-            <React.Fragment key={`badge-${i}`}>
-              <span style={handleStyle}>{h}</span>
-              <span style={badgeStyle}>
-                <span style={{ width: 18, height: 18, borderRadius: 999, background: "linear-gradient(135deg,#f5d442,#f54242,#e84298)", display: "inline-block", marginRight: 2 }} />
-                {label}
-                <span style={{ width: 18, height: 18, borderRadius: 999, background: "linear-gradient(135deg,#42c5f5,#9b42f5,#f542d4)", display: "inline-block", marginLeft: 2 }} />
-              </span>
-            </React.Fragment>
-          );
-        }
-        return <span key={i} style={handleStyle}>{h}</span>;
-      })}
+      {[...PLACEHOLDER_ITEMS, ...PLACEHOLDER_ITEMS].map((item, i) => (
+        <span key={i} style={handleStyle}>{item}</span>
+      ))}
     </div>
   );
   return (

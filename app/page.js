@@ -134,10 +134,10 @@ const navLink = { color: "#1a1a1a", textDecoration: "none", fontSize: 13, letter
 const iconLink = { color: "#1a1a1a", display: "inline-flex", alignItems: "center", justifyContent: "center", width: 28, height: 28, borderRadius: 999, textDecoration: "none" };
 
 const PLACEHOLDER_ITEMS = [
-  "mint a point", "be the first patron", "your name here",
-  "mint a point", "join the crowdfund", "your name here",
-  "mint a point", "be the first patron", "your name here",
-  "mint a point", "join the crowdfund", "your name here",
+  "mint a slice", "be the first patron", "your name here",
+  "mint a slice", "join the crowdfund", "your name here",
+  "mint a slice", "be the first patron", "your name here",
+  "mint a slice", "join the crowdfund", "your name here",
 ];
 
 function PatronMarquee({ direction = "left" }) {

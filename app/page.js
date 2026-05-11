@@ -307,8 +307,7 @@ export default function BuyMeASquiggle() {
         </p>
 
         <h1 style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500, fontSize: "50px", lineHeight: 1.05, textAlign: "center", margin: "0 0 36px", letterSpacing: "-0.01em" }}>
-          buy me a squiggle<br/>
-          <span style={{ fontStyle: "italic" }}>or get a refund</span>
+          buy me a squiggle
         </h1>
 
         <div style={{ borderRadius: 14, margin: "0 auto 28px", width: 280, overflow: "hidden", boxShadow: "0 1px 0 rgba(0,0,0,0.08), 0 10px 40px -10px rgba(0,0,0,0.18)" }}>

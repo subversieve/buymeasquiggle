@@ -151,7 +151,7 @@ function TopNav() {
       <div style={{ display: "flex", gap: 28, alignItems: "center" }}>
         <a href="/" style={navLink}>Home</a>
         <a href="/story" style={navLink}>Story</a>
-        <a href="#" style={{ ...navLink, color: "#999" }}>Lab</a>
+        <a href="/lab" style={navLink}>Lab</a>
       </div>
       <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
         {/* X icon */}

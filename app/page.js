@@ -140,7 +140,7 @@ function TopNav() {
         alignItems: "center",
         justifyContent: "space-between",
         padding: "20px 40px",
-        fontFamily: "'JetBrains Mono', monospace",
+        fontFamily: "'IBM Plex Mono', monospace",
         fontSize: 12,
         letterSpacing: "0.12em",
       }}
@@ -173,7 +173,7 @@ function TopNav() {
             background: "transparent",
             borderRadius: 999,
             padding: "8px 18px",
-            fontFamily: "'JetBrains Mono', monospace",
+            fontFamily: "'IBM Plex Mono', monospace",
             fontSize: 11,
             letterSpacing: "0.2em",
             fontWeight: 500,
@@ -193,7 +193,7 @@ const navLink = {
   textDecoration: "none",
   fontSize: 13,
   letterSpacing: "0.04em",
-  fontFamily: "'Cormorant Garamond', Georgia, serif",
+  fontFamily: "'Instrument Serif', Georgia, serif",
   fontWeight: 500,
 };
 
@@ -268,7 +268,7 @@ function PatronMarquee({ direction = "left" }) {
 }
 
 const handleStyle = {
-  fontFamily: "'JetBrains Mono', monospace",
+  fontFamily: "'IBM Plex Mono', monospace",
   fontSize: 11,
   color: "#9a9385",
   letterSpacing: "0.02em",
@@ -276,7 +276,7 @@ const handleStyle = {
 };
 
 const badgeStyle = {
-  fontFamily: "'JetBrains Mono', monospace",
+  fontFamily: "'IBM Plex Mono', monospace",
   fontSize: 12,
   color: "#1a1a1a",
   fontWeight: 600,
@@ -321,7 +321,7 @@ export default function BuyMeASquiggle() {
         minHeight: "100vh",
         background: "#efeae0",
         color: "#1a1a1a",
-        fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif",
+        fontFamily: "'Instrument Serif', Georgia, serif",
         position: "relative",
         overflow: "hidden",
       }}
@@ -374,7 +374,7 @@ export default function BuyMeASquiggle() {
         {/* Eyebrow */}
         <p style={{
           textAlign: "center",
-          fontFamily: "'JetBrains Mono', monospace",
+          fontFamily: "'IBM Plex Mono', monospace",
           fontSize: 10,
           letterSpacing: "0.3em",
           color: "#9a9385",
@@ -387,7 +387,7 @@ export default function BuyMeASquiggle() {
         {/* Headline */}
         <h1
           style={{
-            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontFamily: "'Instrument Serif', Georgia, serif",
             fontWeight: 500,
             fontSize: "44px",
             lineHeight: 1.05,
@@ -423,7 +423,7 @@ export default function BuyMeASquiggle() {
             style={{
               background: "#1a1a1a",
               color: "#fff",
-              fontFamily: "'JetBrains Mono', monospace",
+              fontFamily: "'IBM Plex Mono', monospace",
               fontSize: 11,
               fontWeight: 600,
               padding: "4px 10px",
@@ -436,7 +436,7 @@ export default function BuyMeASquiggle() {
           </span>
           <span
             style={{
-              fontFamily: "'JetBrains Mono', monospace",
+              fontFamily: "'IBM Plex Mono', monospace",
               fontSize: 14,
               color: "#1a1a1a",
               letterSpacing: "0.04em",
@@ -453,7 +453,7 @@ export default function BuyMeASquiggle() {
         <div style={{ textAlign: "center", marginBottom: 6 }}>
           <span
             style={{
-              fontFamily: "'JetBrains Mono', monospace",
+              fontFamily: "'IBM Plex Mono', monospace",
               fontSize: 38,
               fontWeight: 500,
               letterSpacing: "-0.01em",
@@ -465,7 +465,7 @@ export default function BuyMeASquiggle() {
         <div
           style={{
             textAlign: "center",
-            fontFamily: "'JetBrains Mono', monospace",
+            fontFamily: "'IBM Plex Mono', monospace",
             fontSize: 10,
             color: "#888",
             letterSpacing: "0.18em",
@@ -479,7 +479,7 @@ export default function BuyMeASquiggle() {
         <div
           style={{
             textAlign: "center",
-            fontFamily: "'JetBrains Mono', monospace",
+            fontFamily: "'IBM Plex Mono', monospace",
             fontSize: 13,
             marginBottom: 14,
           }}
@@ -513,7 +513,7 @@ export default function BuyMeASquiggle() {
         <div
           style={{
             textAlign: "center",
-            fontFamily: "'JetBrains Mono', monospace",
+            fontFamily: "'IBM Plex Mono', monospace",
             fontSize: 11,
             color: "#999",
             marginBottom: 22,
@@ -549,7 +549,7 @@ export default function BuyMeASquiggle() {
               border: "none",
               outline: "none",
               textAlign: "center",
-              fontFamily: "'JetBrains Mono', monospace",
+              fontFamily: "'IBM Plex Mono', monospace",
               fontSize: 20,
               color: "#1a1a1a",
               background: "transparent",
@@ -566,7 +566,7 @@ export default function BuyMeASquiggle() {
         <div
           style={{
             textAlign: "center",
-            fontFamily: "'JetBrains Mono', monospace",
+            fontFamily: "'IBM Plex Mono', monospace",
             fontSize: 11,
             color: "#999",
             marginBottom: 18,
@@ -586,7 +586,7 @@ export default function BuyMeASquiggle() {
             border: "none",
             borderRadius: 10,
             padding: "20px",
-            fontFamily: "'JetBrains Mono', monospace",
+            fontFamily: "'IBM Plex Mono', monospace",
             fontSize: 14,
             fontWeight: 600,
             letterSpacing: "0.28em",
@@ -605,7 +605,7 @@ export default function BuyMeASquiggle() {
           style={{
             textAlign: "center",
             marginTop: 28,
-            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontFamily: "'Instrument Serif', Georgia, serif",
             fontSize: 17,
             fontStyle: "italic",
             color: "#5a5a5a",
@@ -696,7 +696,7 @@ export default function BuyMeASquiggle() {
           justifyContent: "center",
           gap: 28,
           marginBottom: 18,
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontFamily: "'Instrument Serif', Georgia, serif",
           fontSize: 15,
         }}>
           <a href="https://x.com" target="_blank" rel="noopener noreferrer" style={footerLink}>X</a>
@@ -706,7 +706,7 @@ export default function BuyMeASquiggle() {
           <a href="https://etherscan.io" target="_blank" rel="noopener noreferrer" style={footerLink}>Etherscan</a>
         </div>
         <p style={{
-          fontFamily: "'JetBrains Mono', monospace",
+          fontFamily: "'IBM Plex Mono', monospace",
           fontSize: 10,
           letterSpacing: "0.2em",
           color: "#b0aa9c",
@@ -715,7 +715,7 @@ export default function BuyMeASquiggle() {
           IMMUTABLE · NO ADMIN KEYS · VERIFIED ON ETHERSCAN
         </p>
         <p style={{
-          fontFamily: "'JetBrains Mono', monospace",
+          fontFamily: "'IBM Plex Mono', monospace",
           fontSize: 10,
           letterSpacing: "0.15em",
           color: "#c9c2b3",
@@ -737,7 +737,7 @@ function HowItem({ label, body }) {
       padding: "18px 20px",
     }}>
       <div style={{
-        fontFamily: "'JetBrains Mono', monospace",
+        fontFamily: "'IBM Plex Mono', monospace",
         fontSize: 11,
         letterSpacing: "0.25em",
         color: "#1a1a1a",
@@ -747,7 +747,7 @@ function HowItem({ label, body }) {
         {label.toUpperCase()}
       </div>
       <p style={{
-        fontFamily: "'Cormorant Garamond', Georgia, serif",
+        fontFamily: "'Instrument Serif', Georgia, serif",
         fontSize: 15,
         lineHeight: 1.5,
         color: "#3a3a3a",
@@ -760,7 +760,7 @@ function HowItem({ label, body }) {
 }
 
 const sectionHeading = {
-  fontFamily: "'Cormorant Garamond', Georgia, serif",
+  fontFamily: "'Instrument Serif', Georgia, serif",
   fontWeight: 500,
   fontSize: 30,
   textAlign: "center",
@@ -769,7 +769,7 @@ const sectionHeading = {
 };
 
 const storyParagraph = {
-  fontFamily: "'Cormorant Garamond', Georgia, serif",
+  fontFamily: "'Instrument Serif', Georgia, serif",
   fontSize: 17,
   lineHeight: 1.55,
   color: "#2a2a2a",
@@ -798,6 +798,6 @@ const stepBtn = {
   fontSize: 22,
   color: "#666",
   cursor: "pointer",
-  fontFamily: "'JetBrains Mono', monospace",
+  fontFamily: "'IBM Plex Mono', monospace",
   borderRadius: 8,
 };
